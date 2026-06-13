@@ -1,0 +1,407 @@
+{
+  "blog": "https://expo.dev/blog",
+  "feed": "https://expo.dev/blog/rss.xml",
+  "fetched": "2026-06-13",
+  "posts": [
+    {
+      "title": "Best CI/CD for mobile apps in 2026: a practical comparison",
+      "url": "https://expo.dev/blog/best-ci-cd-for-mobile-apps",
+      "date": "Sat, 13 Jun 2026 13:45:14 GMT",
+      "description": "Comparing EAS Workflows, Bitrise, Codemagic, GitHub Actions, and others on build speed, pricing, and what actually matters for mobile teams.",
+      "author": "Jon Samp",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/7232ee7bd1267d2fd525853e012e731d4aff60b9-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Faster iOS Builds with Precompiled XCFrameworks",
+      "url": "https://expo.dev/blog/faster-ios-builds-with-precompiled-xcframeworks",
+      "date": "Thu, 11 Jun 2026 12:45:00 GMT",
+      "description": "Starting with SDK 56, Expo packages on iOS ship as prebuilt XCFrameworks, so clean iOS builds skip compiling 70+ packages from source.",
+      "author": "Christian Falch",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/54b8508c6e36ac7c57f7785fa625106a297a76eb-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How a Kotlin compiler plugin cut Android time to first render by 30%",
+      "url": "https://expo.dev/blog/how-a-kotlin-compiler-plugin-cut-android-time-to-first-render",
+      "date": "Wed, 10 Jun 2026 13:15:22 GMT",
+      "description": "A new Kotlin compiler plugin in SDK 56 strips reflection from Expo Modules on Android: 70% faster init, no code changes for app developers.",
+      "author": "Lukasz Kosmaty",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/b33d9d42184da38cf60dc925f88714fe98337adb-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Moving away from @expo/vector-icons",
+      "url": "https://expo.dev/blog/moving-away-from-expo-vector-icons",
+      "date": "Tue, 09 Jun 2026 13:15:11 GMT",
+      "description": "We cut our repro app's bundle by 4 MB by switching from @expo/vector-icons to @react-native-vector-icons. Here's why we now recommend the change.",
+      "author": "Vojtech Novak",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/dbd4bbf1b55e000490d5da1701fb22c5635415cd-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "What happened at AppJS 2026? Highlights, new products, and plans for the future",
+      "url": "https://expo.dev/blog/expo-highlights-new-products-and-plans-for-the-future",
+      "date": "Fri, 05 Jun 2026 20:00:59 GMT",
+      "description": "A recap of the Expo talks from App.js 2026, including a full year of releases and Expo Observe, our new production performance library now in public beta.",
+      "author": "Jon Samp",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/21365b9963259942b72a43e3939ec9b0231ce87d-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Talking to JSI in Swift: what changed in SDK 56",
+      "url": "https://expo.dev/blog/talking-to-jsi-in-swift",
+      "date": "Thu, 04 Jun 2026 13:15:49 GMT",
+      "description": "In SDK 56, Expo's native modules call JSI directly on Apple platforms. The Objective-C++ layer is gone, and calls are 1.6-2.3x faster.",
+      "author": "Tomasz Sapeta",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/d79b8c9bb7fd488d88c3aeb54825de1a08790ea0-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Native code in Expo SDK 56: inline modules and type generation",
+      "url": "https://expo.dev/blog/native-code-expo-sdk-56",
+      "date": "Tue, 02 Jun 2026 15:00:29 GMT",
+      "description": "Write Swift and Kotlin modules right next to your app files, then let SDK 56 generate the matching TypeScript interfaces automatically.",
+      "author": "Hubert Bernacki",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/c1496008abb01ace043bf9e681f699d5e1f2009b-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Expo Router v56: Decoupling from React Navigation",
+      "url": "https://expo.dev/blog/expo-router-v56-decoupling-from-react-navigation",
+      "date": "Thu, 28 May 2026 14:00:05 GMT",
+      "description": "Expo Router v56 forks from React Navigation, ships streaming SSR, and closes the platform gap with a new Android toolbar and Native Tabs updates.",
+      "author": "Jakub Tkacz",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/9cb6b600b25109e1ce604de0ad1c32111b2fc29e-3600x2025.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Worklet integration in Expo UI: synchronously controlling SwiftUI and Compose state",
+      "url": "https://expo.dev/blog/worklet-integration-in-expo-ui-synchronously-controlling-swiftui-and-compose-state",
+      "date": "Wed, 27 May 2026 13:30:15 GMT",
+      "description": "Expo UI now integrates with react-native-worklets, letting you control SwiftUI and Compose state synchronously on the UI thread. No JS round-trips.",
+      "author": "Nishan Bende",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/cd00265f02cbb0bad3c6d9524de9a33c9598c2f3-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Expo UI is now stable: SwiftUI and Jetpack Compose from a single import",
+      "url": "https://expo.dev/blog/expo-ui-stable-sdk-56",
+      "date": "Tue, 26 May 2026 13:15:16 GMT",
+      "description": "Starting with SDK 56, @expo/ui is stable. One import gives you SwiftUI on iOS and Jetpack Compose on Android. No JS reimplementation.",
+      "author": "Kudo Chien",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/05c32a962de8851f00f7992dbaaf077c84936440-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How to upgrade to Expo SDK 56",
+      "url": "https://expo.dev/blog/upgrading-to-sdk-56",
+      "date": "Fri, 22 May 2026 14:00:11 GMT",
+      "description": "How to upgrade to Expo SDK 56: step-by-step tips, New Architecture migration advice, breaking changes, and troubleshooting for a smooth update.",
+      "author": "Keith Kurak",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/0858665f42221b21ca062d570964723dd7bfc6c3-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Best way to build a mobile app that makes money in 2026",
+      "url": "https://expo.dev/blog/best-way-to-build-a-mobile-app-that-makes-money-in-2026",
+      "date": "Wed, 20 May 2026 21:00:12 GMT",
+      "description": "An opinionated take on the best Expo stack, what data tells about app monetization, and why you should still choose React Native to win.",
+      "author": "Perttu Lahteenlahti",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/36172ef95c62bcd62bd392be3f7f364435d68363-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "ASO Skills: ASO in Your AI Workflow",
+      "url": "https://expo.dev/blog/aso-skills-aso-in-your-ai-workflow",
+      "date": "Tue, 19 May 2026 13:15:24 GMT",
+      "description": "Expo made shipping fast, but discovery is the new bottleneck. ASO Skills puts App Store Optimization inside Cursor, Claude Code, and Codex.",
+      "author": "Erencan Arica",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/b144930bbfb730d709be8601f2eb310d6e0d5e90-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "From React web to Native in one week",
+      "url": "https://expo.dev/blog/from-react-web-to-native-in-one-week",
+      "date": "Thu, 14 May 2026 16:30:12 GMT",
+      "description": "A React web developer's end-to-end journey building a real iOS app in a week with Expo, Claude Code, and Expo Skills. What transferred, what didn't.",
+      "author": "Ishika Chakraborty",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/1fdbeadf60ecb6313127960f6359bfb5e8717355-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Build fast, no matter what: how Expo is optimizing for speed (and how you can, too)",
+      "url": "https://expo.dev/blog/build-fast-no-matter-what-how-expo-is-optimizing-for-speed",
+      "date": "Wed, 13 May 2026 13:00:03 GMT",
+      "description": "New M4 Mac Minis, compiler caching, and prebuilt binaries are speeding up EAS builds. Learn how to build less often with fingerprints and OTA updates.",
+      "author": "Keith Kurak",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/d650e382de945c87e8e73933ff3e2b0bf170439f-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How to ship an AI mobile app fast with Expo",
+      "url": "https://expo.dev/blog/how-to-ship-an-ai-mobile-app-fast-with-expo",
+      "date": "Thu, 07 May 2026 15:30:42 GMT",
+      "description": "How CineMe shipped an AI selfie-to-video app to iOS and Android in just over a month, using Expo and EAS Build to skip platform divergence.",
+      "author": "Kiril Kostev",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/720913faec92f84bdf590cdc12087a964712f9c3-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Shipping a performance-first video feed: How Tendbble built a real-time social app with Expo",
+      "url": "https://expo.dev/blog/shipping-a-performance-first-video-feed-how-tendbble-built-a-real-time-social-app-with-expo",
+      "date": "Wed, 06 May 2026 15:30:01 GMT",
+      "description": "Tendbble built a real-time video social app with two frontend devs. Here's how they solved memory, 60fps animation, and camera lifecycle on both platforms.",
+      "author": "Pierre Cangemi",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/b4bc18279cefeb885e057ae1f2af11003eb69968-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "The real cost of React Native animations: benchmarking every approach",
+      "url": "https://expo.dev/blog/the-real-cost-of-react-native-animations-benchmarking-every-approach",
+      "date": "Tue, 28 Apr 2026 13:30:00 GMT",
+      "description": "How much does a React Native animation library actually cost per frame? Benchmarks for Ease, Reanimated, and RN Animated on real iOS and Android devices.",
+      "author": "Janic Duplessis",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/912d5b0e25a55b6f0597082f254692d4097293e7-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "App Store Connect minimum SDK requirements update",
+      "url": "https://expo.dev/blog/app-store-connect-minimum-sdk-26",
+      "date": "Mon, 27 Apr 2026 19:00:23 GMT",
+      "description": "Apple's latest App Store Connect minimum SDK requirements and what it means for Expo developers.",
+      "author": "Szymon Dziedzic",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/c98d99dec0044b80ad8cf3596cadd55f07495978-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "From Istanbul to #1 in the US App Store: why FERASET bet its AI app studio on Expo",
+      "url": "https://expo.dev/blog/from-istanbul-to-1-in-the-us-app-store-why-feraset-bet-its-ai-app-studio-on-expo",
+      "date": "Thu, 23 Apr 2026 13:30:00 GMT",
+      "description": "FERASET shipped their first AI app to both stores in 4 weeks and hit #1 globally, beating Spotify. Here's why this Istanbul studio bet everything on Expo.",
+      "author": "Said Y. Kaban",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/398354fd7b51c04c5b2326efeb04e6f0309e7fd9-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How Hipcamp upgraded Expo SDK versions with Claude Code",
+      "url": "https://expo.dev/blog/how-hipcamp-upgraded-expo-sdk-versions-with-claude-code",
+      "date": "Tue, 21 Apr 2026 13:15:32 GMT",
+      "description": "From a quarter to a sprint: how Hipcamp used Claude Code to upgrade 40+ React Native dependencies, migrate to the New Architecture, and ship on Expo 54.",
+      "author": "Armaiz Adenwala",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/ec22c14ccb4d8a21ed49588b438078461dc8c000-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "I joined Expo.",
+      "url": "https://expo.dev/blog/seth-webster-joined-expo",
+      "date": "Mon, 20 Apr 2026 15:30:47 GMT",
+      "description": "After leading React at Meta and co-founding the React Foundation, here's why joining Expo felt like the natural next step for helping developers ship faster.",
+      "author": "Seth Webster",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/14f4bab765afab5600bf16e3741169a78f1bcc35-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "What Expo's Series B funding means for you",
+      "url": "https://expo.dev/blog/what-expo-s-series-b-funding-means-for-you",
+      "date": "Thu, 16 Apr 2026 14:30:29 GMT",
+      "description": "Expo co-founder Charlie Cheever on why Expo raised $45M, what Expo Agent means for developers, and the next frontier of software development with Expo and AI.",
+      "author": "Charlie Cheever",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/109299c6012c515d7b66edb44bcef27878c23961-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How to keep your OTA updates lean and fast",
+      "url": "https://expo.dev/blog/how-to-keep-your-ota-updates-lean-and-fast",
+      "date": "Tue, 14 Apr 2026 13:15:39 GMT",
+      "description": "Ship faster OTA updates to your React Native users with smaller bundles, smarter rollouts, and practical techniques to optimize your OTA Update usage.",
+      "author": "Jacob Clausen",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/796f9e7ffd7748b10b25a3133c16dcf7eaf1f4bc-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Build an AI QA Agent for Expo Apps with EAS Workflows in minutes today",
+      "url": "https://expo.dev/blog/build-an-ai-qa-agent-for-expo-apps-with-eas-workflows-in-minutes-today",
+      "date": "Thu, 02 Apr 2026 13:15:00 GMT",
+      "description": "Build a lightweight mobile QA agent with EAS Workflows and agent-device. Automate UI verification for iOS and Android PRs without a giant test framework.",
+      "author": "Michal Pierzchala",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/f4d56824f3bb1f0e095006e9501ad5cfdf3d3482-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How Fig keeps millions eating safely with a five-engineer team and Expo",
+      "url": "https://expo.dev/blog/how-fig-keeps-millions-eating-safely-with-a-five-engineer-team-and-expo",
+      "date": "Tue, 31 Mar 2026 13:30:29 GMT",
+      "description": "Fig helps millions with dietary restrictions find safe food. Here's how a five-person team uses the Expo SDK and EAS Update to ship reliably and move fast.",
+      "author": "Jake Lynch",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/ef1d0636b20fabd97d0d695d969d872925434708-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "From skeptic to convert: how Fieldy adopted Expo for their AI wearable",
+      "url": "https://expo.dev/blog/how-fieldy-adopted-expo-for-their-ai-wearable",
+      "date": "Tue, 24 Mar 2026 13:45:00 GMT",
+      "description": "Fieldy's AI wearable needs persistent BLE connections and background audio. They migrated to Expo, cut app size by 25%, and automated every deploy.",
+      "author": "Adomas Valiukevicious",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/934559f254f7411389f142a430176501bd39070e-3600x2025.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "5 proven strategies to increase adoption of your B2B mobile app",
+      "url": "https://expo.dev/blog/5-proven-strategies-to-increase-adoption-of-your-b2b-mobile-app",
+      "date": "Thu, 19 Mar 2026 13:45:10 GMT",
+      "description": "Enterprise buyers don't install apps from ads. Learn how to drive B2B app adoption through onboarding, case studies, pilots, and targeted distribution.",
+      "author": "Dan Kelly",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/75fb50fa9586d05e19a8609abbb1d4e50baae9bc-3600x2025.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Expo UI in SDK 55: Jetpack Compose now available for React Native apps",
+      "url": "https://expo.dev/blog/expo-ui-in-sdk-55-jetpack-compose-now-available-for-react-native-apps",
+      "date": "Tue, 17 Mar 2026 13:15:49 GMT",
+      "description": "Expo UI in SDK 55 brings Jetpack Compose to beta and aligns SwiftUI APIs with Apple's conventions, so your native framework knowledge transfers directly.",
+      "author": "Kudo Chien",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/0753cf8aef79bce30976d76e1257f48b43a5107f-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "The next generation of Expo APIs: MediaLibrary and Contacts",
+      "url": "https://expo.dev/blog/the-next-generation-of-expo-apis-medialibrary-and-contacts",
+      "date": "Thu, 12 Mar 2026 13:30:20 GMT",
+      "description": "SDK 55 brings the next iteration of our core libraries. Shared Objects and Shared Refs fundamentally change how to interact with native data with these libraries.",
+      "author": "Wiktor Smaga",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/8be7e440c83e535e5d7768b0691d4cf20a35a7c6-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Introducing Expo Agent (beta): build native apps with Expo and AI",
+      "url": "https://expo.dev/blog/expo-agent-beta",
+      "date": "Tue, 10 Mar 2026 16:00:47 GMT",
+      "description": "Describe the app you want. Expo Agent builds it. A real, shippable native app for iOS, Android, and the web. Join the waitlist to try the beta.",
+      "author": "Expo Team",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/fbd576da3bd63f1a986eb5ba3443416648ac7e98-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Expo brownfield: How to add Expo to your existing native app without a rewrite",
+      "url": "https://expo.dev/blog/expo-brownfield-how-to-add-expo-to-your-existing-native-app-without-a-rewrite",
+      "date": "Thu, 05 Mar 2026 14:30:45 GMT",
+      "description": "Add Expo to an existing native iOS/Android app without a rewrite. Learn the new isolated brownfield workflow in Expo SDK 55.",
+      "author": "Jacob Clausen",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/d3bef275d5b916b0bfcecdd41a639e2b052208b5-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Home screen widgets and Live Activities in Expo",
+      "url": "https://expo.dev/blog/home-screen-widgets-and-live-activities-in-expo",
+      "date": "Wed, 04 Mar 2026 16:30:38 GMT",
+      "description": "The new expo-widgets library lets you build home screen widgets and Live Activities using Expo UI components, with zero native setup.",
+      "author": "Jakub Grzywacz",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/c5b9586a5825c0a982b6bf2ce23b55198eace7ec-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Expo Router v55: more native navigation, more powerful web",
+      "url": "https://expo.dev/blog/expo-router-v55-more-native-navigation-more-powerful-web",
+      "date": "Mon, 02 Mar 2026 14:15:20 GMT",
+      "description": "Expo Router v55 upgrades navigation with a new Stack API, native tabs, dynamic colors, and toolbars plus experimental SSR and data loaders.",
+      "author": "Jakub Tkacz",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/5f9b9c015f605c87c473409ae662884ac5989038-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Ship smaller OTA updates: bundle diffing comes to EAS Update in SDK 55",
+      "url": "https://expo.dev/blog/ship-smaller-ota-updates-bundle-diffing-comes-to-ota-updates-in-sdk-55",
+      "date": "Fri, 27 Feb 2026 19:15:42 GMT",
+      "description": "SDK 55 introduces bundle diffing in EAS Update. Devices now download patches instead of full bundles, reducing download sizes by up to 75%.",
+      "author": "Quin Jung",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/de90b96a572c23c87195b06b7d1401bf4b9f5514-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How to upgrade to Expo SDK 55",
+      "url": "https://expo.dev/blog/upgrading-to-sdk-55",
+      "date": "Thu, 26 Feb 2026 15:45:56 GMT",
+      "description": "How to upgrade to Expo SDK 55: step-by-step tips, New Architecture migration advice, breaking changes, and troubleshooting for a smooth update.",
+      "author": "Keith Kurak",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/281272bbeaf7c2b5dc8282a1f7458dee9561d974-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "5 OTA Update best practices every mobile team should know",
+      "url": "https://expo.dev/blog/5-ota-update-best-practices-every-mobile-team-should-know",
+      "date": "Tue, 24 Feb 2026 16:15:03 GMT",
+      "description": "OTA update best practices for React Native teams: preview channels, fingerprint detection, the expo-updates API, gradual rollouts, and fast rollbacks.",
+      "author": "Ishika Chakraborty",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/ac5739ea68d2774f6084f55112449332c8925322-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Automating OTA Updates: How Onespot deploys to 200+ apps without touching a laptop",
+      "url": "https://expo.dev/blog/automating-ota-updates-how-onespot-deploys-to-200-apps-without-touching-a-laptop",
+      "date": "Fri, 20 Feb 2026 14:15:10 GMT",
+      "description": "Deploy OTA updates to 200+ React Native apps with one tap. See how Onespot automated multi-app publishing with Expo's OTA Updates, GitHub Actions, and a phone.",
+      "author": "Sean Cann",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/e2c1a92a82f48b432c72b99f623644ec41e812b2-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "The production playbook for OTA updates",
+      "url": "https://expo.dev/blog/the-production-playbook-for-ota-updates",
+      "date": "Wed, 18 Feb 2026 14:15:00 GMT",
+      "description": "Learn how to run OTA Updates safely in production with staged rollouts, real-time monitoring, and rollback strategies to ship with confidence.",
+      "author": "Jacob Clausen",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/13d9ca8af01318f26c6f4bd72e17447c38f45990-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Automate mobile CI/CD with EAS Workflows and custom builds",
+      "url": "https://expo.dev/blog/automate-mobile-ci-cd-with-eas-workflows-and-custom-builds",
+      "date": "Thu, 12 Feb 2026 16:45:00 GMT",
+      "description": "EAS Workflows lets you automate builds, tests, updates, and more in a single YAML file. Learn what's available out-of-the-box and how to customize when needed.",
+      "author": "Stanislaw Chmiela",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/e16c9866289cb640afcffadd3d6cfee2e78cda68-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Building an AI-first Photos app with Expo and Coreviz SDK",
+      "url": "https://expo.dev/blog/building-an-ai-first-photos-app-with-expo-and-coreviz-sdk",
+      "date": "Wed, 11 Feb 2026 14:00:29 GMT",
+      "description": "Building native-feeling photo grids in Expo: How to recreate iOS Photos' pinch-to-zoom interaction using multiple virtualized grids and cross-fading.",
+      "author": "Wassim Gharbi",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/7f6d28cd28e5cc3a807ec74a09c1ec9f2bafa6c2-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "What our web team learned using Claude Code for a month",
+      "url": "https://expo.dev/blog/what-our-web-team-learned-using-claude-code-for-a-month",
+      "date": "Fri, 06 Feb 2026 16:30:12 GMT",
+      "description": "Expo's web team used Claude Code extensively for a month. Learn what worked for us, what didn't, and how Expo gets real value from AI coding tools.",
+      "author": "Juwan Wheatley",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/374d6e1b3f5600963eaf79ccd938cfd6015f7ee7-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How to modernize mobile retail apps with Expo",
+      "url": "https://expo.dev/blog/how-to-modernize-mobile-retail-apps-with-expo",
+      "date": "Fri, 06 Feb 2026 00:30:00 GMT",
+      "description": "Learn how bitglow modernized DEPOT's React Native app with Expo Prebuild, cutting upgrade time by 80% and boosting performance scores from 36 to 90.",
+      "author": "Jonathan Bones",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/4bcf210f7fd870f700c953c64911146046bd1708-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Building high-quality UIs with Expo and NativeWind",
+      "url": "https://expo.dev/blog/building-high-quality-uis-with-expo-and-nativewind",
+      "date": "Tue, 03 Feb 2026 14:15:33 GMT",
+      "description": "Learn how to design React Native apps directly in code using Expo, NativeWind, and Reanimated. Build reusable components, implement theming, and skip Figma.",
+      "author": "Thomino",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/b71eb09fb51e51f373d0095fc04036ca7a2032cf-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "5 tips to increase mobile app downloads and retention in 2026",
+      "url": "https://expo.dev/blog/how-to-increase-mobile-app-downloads-and-retention",
+      "date": "Fri, 30 Jan 2026 14:15:25 GMT",
+      "description": "How consumer apps grow in 2026: ASO that compounds, long-tail keywords, voice search optimization, conversion screenshots, ratings, and referrals.",
+      "author": "Dan Kelly",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/faf917e9bb42f3e94977444c69e994d6487c3c17-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "How Sanas built a real-time video translation app in 3 months using Expo",
+      "url": "https://expo.dev/blog/how-sanas-built-an-instant-language-translation-app-with-expo",
+      "date": "Thu, 29 Jan 2026 17:00:44 GMT",
+      "description": "How Sanas built the world's first instant translation video app in 3 months using Expo. Real-time voice across 25+ languages with sub-2-second latency.",
+      "author": "Jason Lin",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/873553cf4a8880a0141a5e35bf198b7ea4dc41d4-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "The solo dev playbook: ship faster with Expo, EAS Build, and OTA Updates",
+      "url": "https://expo.dev/blog/building-a-cross-platform-app-without-touching-xcode-or-android-studio",
+      "date": "Wed, 28 Jan 2026 14:45:49 GMT",
+      "description": "How to build and ship a cross-platform app fast with Expo using: audio, camera, notifications, secure storage, plus EAS Build, Update, and Submit.",
+      "author": "Liam Du",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/fc2b58de005e3ba720320faa24eec193e8168c3f-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Channel surfing for Expo Updates: How to switch update channels at runtime",
+      "url": "https://expo.dev/blog/channel-surfing-for-expo-updates-how-to-switch-update-channels-at-runtime",
+      "date": "Wed, 21 Jan 2026 14:00:42 GMT",
+      "description": "Ship changes to specific users instantly with Expo's OTA Update Channel Surfing. Now you can switch update channels at runtime without reinstalling.",
+      "author": "Jacob Clausen",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/d508ae04c677d8d157dc4a148591b049e1acb847-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Strapi: low-code CMS for Expo and React Native",
+      "url": "https://expo.dev/blog/strapi-cms-for-react-native",
+      "date": "Tue, 20 Jan 2026 09:00:25 GMT",
+      "description": "Discover how Strapi's headless CMS transforms React Native development with instant APIs, visual content management, and dynamic block-based pages.",
+      "author": "Paul Bratslavsky",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/a42dbf4c7d6c40d0e90bea4729fbc439e3c3c514-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    },
+    {
+      "title": "Making AI feel human in a mobile app with Expo, Reanimated, and Skia",
+      "url": "https://expo.dev/blog/making-ai-feel-human-in-a-mobile-app-with-expo-reanimated-and-skia",
+      "date": "Thu, 15 Jan 2026 14:30:04 GMT",
+      "description": "See how Callie, a Most Creative Expo App Awards winner, uses Expo, Reanimated, and Skia shaders to deliver a warm, emotionally safe mobile experience.",
+      "author": "Daehyeon Mun",
+      "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/2db61c3215c809002bdbe3d7aa145675477ad9f1-2400x1350.png?w=1200&h=675&q=80&auto=format"
+    }
+  ]
+}

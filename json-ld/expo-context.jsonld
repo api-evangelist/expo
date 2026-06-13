@@ -1,0 +1,155 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "expo": "https://expo.dev/vocab/",
+    "eas": "https://docs.expo.dev/eas/",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": "schema:url",
+    "image": "schema:image",
+    "provider": "schema:provider",
+    "dateCreated": "schema:dateCreated",
+    "dateModified": "schema:dateModified",
+
+    "SoftwareApplication": "schema:SoftwareApplication",
+    "WebAPI": "schema:WebAPI",
+    "APIReference": "schema:APIReference",
+    "TechArticle": "schema:TechArticle",
+
+    "EASBuild": {
+      "@id": "expo:EASBuild",
+      "@type": "@id"
+    },
+    "EASSubmit": {
+      "@id": "expo:EASSubmit",
+      "@type": "@id"
+    },
+    "EASUpdate": {
+      "@id": "expo:EASUpdate",
+      "@type": "@id"
+    },
+    "EASWorkflows": {
+      "@id": "expo:EASWorkflows",
+      "@type": "@id"
+    },
+    "EASHosting": {
+      "@id": "expo:EASHosting",
+      "@type": "@id"
+    },
+    "EASInsights": {
+      "@id": "expo:EASInsights",
+      "@type": "@id"
+    },
+    "EASObserve": {
+      "@id": "expo:EASObserve",
+      "@type": "@id"
+    },
+    "PushNotifications": {
+      "@id": "expo:PushNotifications",
+      "@type": "@id"
+    },
+    "EASWebhooks": {
+      "@id": "expo:EASWebhooks",
+      "@type": "@id"
+    },
+
+    "buildJob": {
+      "@id": "expo:buildJob",
+      "@type": "@id"
+    },
+    "buildArtifact": {
+      "@id": "expo:buildArtifact",
+      "@type": "@id"
+    },
+    "buildStatus": {
+      "@id": "expo:buildStatus",
+      "@type": "schema:Text"
+    },
+    "buildPlatform": {
+      "@id": "expo:buildPlatform",
+      "@type": "schema:Text"
+    },
+    "resourceClass": {
+      "@id": "expo:resourceClass",
+      "@type": "schema:Text"
+    },
+    "oaUpdate": {
+      "@id": "expo:oaUpdate",
+      "@type": "@id"
+    },
+    "updateBranch": {
+      "@id": "expo:updateBranch",
+      "@type": "schema:Text"
+    },
+    "updateChannel": {
+      "@id": "expo:updateChannel",
+      "@type": "schema:Text"
+    },
+    "rolloutPercentage": {
+      "@id": "expo:rolloutPercentage",
+      "@type": "schema:Number"
+    },
+    "pushToken": {
+      "@id": "expo:pushToken",
+      "@type": "schema:Text"
+    },
+    "webhookEvent": {
+      "@id": "expo:webhookEvent",
+      "@type": "schema:Text"
+    },
+    "webhookSecret": {
+      "@id": "expo:webhookSecret",
+      "@type": "schema:Text"
+    },
+    "hmacSignature": {
+      "@id": "expo:hmacSignature",
+      "@type": "schema:Text"
+    },
+    "personalAccessToken": {
+      "@id": "expo:personalAccessToken",
+      "@type": "schema:Text"
+    },
+    "robotToken": {
+      "@id": "expo:robotToken",
+      "@type": "schema:Text"
+    },
+    "sdkVersion": {
+      "@id": "expo:sdkVersion",
+      "@type": "schema:Text"
+    },
+    "appSlug": {
+      "@id": "expo:appSlug",
+      "@type": "schema:Text"
+    },
+    "projectId": {
+      "@id": "expo:projectId",
+      "@type": "schema:Text"
+    },
+    "accountName": {
+      "@id": "expo:accountName",
+      "@type": "schema:Text"
+    },
+    "fingerprint": {
+      "@id": "expo:fingerprint",
+      "@type": "schema:Text"
+    },
+    "monthlyActiveUsers": {
+      "@id": "expo:monthlyActiveUsers",
+      "@type": "schema:Number"
+    },
+    "edgeBandwidth": {
+      "@id": "expo:edgeBandwidth",
+      "@type": "schema:QuantitativeValue"
+    },
+    "workflowTrigger": {
+      "@id": "expo:workflowTrigger",
+      "@type": "schema:Text"
+    },
+    "cronSchedule": {
+      "@id": "expo:cronSchedule",
+      "@type": "schema:Text"
+    }
+  }
+}
