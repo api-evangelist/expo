@@ -1,0 +1,171 @@
+name: Expo Plans and Pricing
+description: >
+  Expo Application Services (EAS) subscription plans covering cloud builds,
+  over-the-air updates, CI/CD workflows, hosting, and push notifications.
+  All plans include usage-based overages billed monthly. Annual contracts
+  available on request.
+version: "0.1"
+url: https://expo.dev/pricing
+docsUrl: https://docs.expo.dev/billing/plans/
+
+plans:
+  - name: Free
+    slug: free
+    price: 0
+    currency: USD
+    billingPeriod: monthly
+    description: >
+      For solo developers on passion projects. Low-priority build queue,
+      limited builds, and 1,000 MAU for OTA updates.
+    features:
+      - name: Projects
+        value: "25"
+      - name: Members
+        value: Unlimited
+      - name: EAS Build (Android)
+        value: Up to 15 builds/month (low-priority queue)
+      - name: EAS Build (iOS)
+        value: Up to 15 builds/month (low-priority queue)
+      - name: EAS Update MAU
+        value: "1,000"
+      - name: EAS Workflows CI/CD minutes
+        value: "60 minutes"
+      - name: Hosting monthly requests
+        value: "100,000"
+      - name: Hosting CPU-ms
+        value: "1,000,000"
+      - name: Hosting storage
+        value: 1 GB
+      - name: Support
+        value: Community chat (Discord)
+      - name: Custom environments
+        value: "0"
+      - name: Build concurrency
+        value: "1 (low priority)"
+
+  - name: Starter
+    slug: starter
+    price: 19
+    currency: USD
+    billingPeriod: monthly
+    description: >
+      For developers launching real-world apps. High-priority build queue,
+      $45 in monthly build credits, and 3,000 MAU for OTA updates.
+    features:
+      - name: Projects
+        value: "50"
+      - name: Members
+        value: Unlimited
+      - name: EAS Build credits included
+        value: $45/month (high-priority queue)
+      - name: EAS Update MAU
+        value: "3,000"
+      - name: EAS Workflows CI/CD
+        value: Usage-based
+      - name: Hosting monthly requests
+        value: "100,000"
+      - name: Hosting CPU-ms
+        value: "1,000,000"
+      - name: Hosting storage
+        value: 1 GB
+      - name: Support
+        value: Community chat (Discord)
+      - name: Custom environments
+        value: "0"
+      - name: Build concurrency
+        value: "1 (high priority)"
+      - name: Additional concurrency
+        value: "$50 each (up to 5 extra)"
+
+  - name: Production
+    slug: production
+    price: 199
+    currency: USD
+    billingPeriod: monthly
+    description: >
+      For teams building production apps. $225 in monthly build credits,
+      50,000 MAU for OTA updates, 2 concurrent builds, SSO, and 10 custom
+      environments.
+    features:
+      - name: Projects
+        value: "100"
+      - name: Members
+        value: Unlimited
+      - name: EAS Build credits included
+        value: $225/month (high-priority queue)
+      - name: EAS Build concurrency
+        value: "2 concurrent builds"
+      - name: EAS Update MAU
+        value: "50,000"
+      - name: EAS Workflows CI/CD
+        value: Usage-based
+      - name: Hosting monthly requests
+        value: "100,000"
+      - name: Hosting CPU-ms
+        value: "1,000,000"
+      - name: Hosting storage
+        value: 1 GB
+      - name: SSO
+        value: Included
+      - name: Custom environments
+        value: "10"
+      - name: Support
+        value: Priority support
+      - name: Additional concurrency
+        value: "$50 each (up to 5 extra)"
+
+  - name: Enterprise
+    slug: enterprise
+    price: 0
+    currency: USD
+    billingPeriod: monthly
+    description: >
+      For apps requiring scale, security, and compliance. Custom pricing with
+      $1,000+ monthly build credits, 1M+ MAU, 5 concurrent builds, 300 projects,
+      dedicated account management, 99.9% uptime SLA, Slack and strategic support.
+    features:
+      - name: Projects
+        value: "300"
+      - name: Members
+        value: Unlimited
+      - name: EAS Build credits included
+        value: "$1,000+/month"
+      - name: EAS Build concurrency
+        value: "5 concurrent builds"
+      - name: EAS Update MAU
+        value: "1,000,000+"
+      - name: EAS Workflows CI/CD
+        value: Usage-based
+      - name: Hosting monthly requests
+        value: "100,000"
+      - name: Hosting CPU-ms
+        value: "1,000,000"
+      - name: Hosting storage
+        value: 1 GB
+      - name: SSO
+        value: Included
+      - name: Custom environments
+        value: "10"
+      - name: Support
+        value: "Slack + strategic support; dedicated account manager"
+      - name: SLA
+        value: 99.9% uptime SLA
+      - name: Additional concurrency
+        value: "$50 each (up to 5 extra)"
+    customPricing: true
+
+addons:
+  - name: Extra Build Concurrency
+    description: Additional parallel build slots beyond plan-included concurrency
+    price: 50
+    currency: USD
+    unit: per slot/month
+    maxSlots: 5
+
+  - name: Enterprise Support
+    description: >
+      Professional long-term support with dedicated account manager, SLA-backed
+      direct communication channels, and strategic guidance.
+    price: 0
+    currency: USD
+    note: Custom pricing; subject to availability

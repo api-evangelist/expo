@@ -1,0 +1,216 @@
+name: Expo Rate Limits
+description: >
+  Rate limits, quotas, and usage caps for Expo Application Services (EAS).
+  Limits apply per plan per billing period (monthly). Build credits reset
+  at the start of each billing period and expire at period end. Usage
+  estimates may be delayed up to 24 hours in the account dashboard.
+version: "0.1"
+url: https://docs.expo.dev/billing/usage-based-pricing/
+docsUrl: https://docs.expo.dev/billing/plans/
+
+rateLimits:
+  - name: EAS Build - Free Plan
+    service: EAS Build
+    plan: Free
+    limits:
+      - resource: Android builds
+        value: 15
+        unit: builds/month
+        priority: low
+      - resource: iOS builds
+        value: 15
+        unit: builds/month
+        priority: low
+    notes: >
+      Low-priority queue. Builds cancelled before work begins are not charged.
+      Credits reset monthly and do not carry over.
+
+  - name: EAS Build - Starter Plan
+    service: EAS Build
+    plan: Starter
+    limits:
+      - resource: Build credits
+        value: 45
+        unit: USD/month
+        priority: high
+      - resource: Concurrent builds
+        value: 1
+        unit: concurrent
+    overages:
+      - resource: Android medium build
+        price: 1.00
+        unit: USD per build
+      - resource: Android large build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS medium build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS large build
+        price: 4.00
+        unit: USD per build
+    notes: >
+      High-priority queue. Email alerts fire at 80% and 100% of included credits.
+
+  - name: EAS Build - Production Plan
+    service: EAS Build
+    plan: Production
+    limits:
+      - resource: Build credits
+        value: 225
+        unit: USD/month
+        priority: high
+      - resource: Concurrent builds
+        value: 2
+        unit: concurrent
+    overages:
+      - resource: Android medium build
+        price: 1.00
+        unit: USD per build
+      - resource: Android large build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS medium build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS large build
+        price: 4.00
+        unit: USD per build
+    notes: >
+      Up to 5 additional concurrent build slots at $50 each.
+
+  - name: EAS Build - Enterprise Plan
+    service: EAS Build
+    plan: Enterprise
+    limits:
+      - resource: Build credits
+        value: 1000
+        unit: USD/month (minimum)
+        priority: high
+      - resource: Concurrent builds
+        value: 5
+        unit: concurrent
+    overages:
+      - resource: Android medium build
+        price: 1.00
+        unit: USD per build
+      - resource: Android large build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS medium build
+        price: 2.00
+        unit: USD per build
+      - resource: iOS large build
+        price: 4.00
+        unit: USD per build
+    notes: >
+      Up to 5 additional concurrent build slots at $50 each.
+
+  - name: EAS Update - Monthly Active Users
+    service: EAS Update
+    limits:
+      - plan: Free
+        resource: Monthly Active Users (MAU)
+        value: 1000
+        unit: users/month
+      - plan: Starter
+        resource: Monthly Active Users (MAU)
+        value: 3000
+        unit: users/month
+      - plan: Production
+        resource: Monthly Active Users (MAU)
+        value: 50000
+        unit: users/month
+      - plan: Enterprise
+        resource: Monthly Active Users (MAU)
+        value: 1000000
+        unit: users/month
+    overages:
+      - resource: Additional MAU
+        price: 0.005
+        unit: USD per user
+        note: Includes 40 MiB of global edge bandwidth per additional user
+    notes: >
+      A user counts only once per billing period regardless of how many
+      updates they receive.
+
+  - name: EAS Update - Global Edge Bandwidth
+    service: EAS Update
+    overages:
+      - resource: Global edge bandwidth (overage)
+        price: 0.10
+        unit: USD per GiB
+    notes: >
+      40 MiB of bandwidth included per additional MAU beyond plan limit.
+      Additional overage billed at $0.10/GiB.
+
+  - name: EAS Update - Storage
+    service: EAS Update
+    overages:
+      - resource: Update storage (overage)
+        price: 0.05
+        unit: USD per GiB
+
+  - name: EAS Workflows - CI/CD Minutes
+    service: EAS Workflows
+    limits:
+      - plan: Free
+        resource: CI/CD minutes
+        value: 60
+        unit: minutes/month
+      - plan: Starter
+        resource: CI/CD minutes
+        value: 0
+        unit: Usage-based (no included minutes)
+      - plan: Production
+        resource: CI/CD minutes
+        value: 0
+        unit: Usage-based (no included minutes)
+    notes: >
+      Free plan includes 60 minutes/month. Maestro testing costs $0.05 per
+      job plus CI/CD minutes.
+
+  - name: EAS Hosting
+    service: EAS Hosting
+    limits:
+      - plan: All plans
+        resource: Monthly requests
+        value: 100000
+        unit: requests/month
+      - plan: All plans
+        resource: CPU time
+        value: 1000000
+        unit: CPU-ms/month
+      - plan: All plans
+        resource: Storage
+        value: 1
+        unit: GB
+
+  - name: Projects per Account
+    service: Account
+    limits:
+      - plan: Free
+        resource: Projects
+        value: 25
+      - plan: Starter
+        resource: Projects
+        value: 50
+      - plan: Production
+        resource: Projects
+        value: 100
+      - plan: Enterprise
+        resource: Projects
+        value: 300
+
+webhookRetry:
+  description: >
+    Webhook deliveries that receive an HTTP status code outside 200-399
+    will be retried automatically with exponential back-off.
+  strategy: exponential-backoff
+  trigger: HTTP status outside 200-399
+
+alerts:
+  - event: EAS Build credits at 80%
+    channel: Email
+  - event: EAS Build credits at 100%
+    channel: Email

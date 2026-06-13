@@ -1,0 +1,237 @@
+name: Expo FinOps
+description: >
+  FinOps Framework 1.0 FOCUS-aligned cost management reference for Expo
+  Application Services (EAS). Covers cost visibility, optimization, and
+  governance for EAS Build, EAS Update, EAS Workflows, and EAS Hosting
+  usage across Free, Starter, Production, and Enterprise plans.
+version: "1.0"
+framework: FinOps Framework 1.0
+focusAligned: true
+url: https://docs.expo.dev/billing/usage-based-pricing/
+docsUrl: https://docs.expo.dev/billing/plans/
+
+costCategories:
+  - name: EAS Build
+    description: Cloud compilation and code-signing costs for Android and iOS apps
+    billingModel: Credits + overages
+    unit: USD per build
+    services:
+      - name: Android Medium Build
+        sku: eas-build-android-medium
+        unitCost: 1.00
+        currency: USD
+        unit: per build
+      - name: Android Large Build
+        sku: eas-build-android-large
+        unitCost: 2.00
+        currency: USD
+        unit: per build
+      - name: iOS Medium Build
+        sku: eas-build-ios-medium
+        unitCost: 2.00
+        currency: USD
+        unit: per build
+      - name: iOS Large Build
+        sku: eas-build-ios-large
+        unitCost: 4.00
+        currency: USD
+        unit: per build
+    includedCredits:
+      - plan: Free
+        value: 0
+        unit: USD/month
+        builds: "Up to 15 Android + 15 iOS (low priority)"
+      - plan: Starter
+        value: 45
+        unit: USD/month
+      - plan: Production
+        value: 225
+        unit: USD/month
+      - plan: Enterprise
+        value: 1000
+        unit: USD/month (minimum)
+    notes: >
+      Build credits reset at the start of each billing period and expire at
+      period end. Cancelled builds not yet started are not charged. Email
+      alerts fire at 80% and 100% of credit consumption.
+
+  - name: EAS Update (OTA Updates)
+    description: Over-the-air JavaScript bundle delivery costs
+    billingModel: MAU-based with bandwidth overages
+    services:
+      - name: Additional Monthly Active Users
+        sku: eas-update-mau
+        unitCost: 0.005
+        currency: USD
+        unit: per MAU over plan limit
+        note: Includes 40 MiB edge bandwidth per additional user
+      - name: Global Edge Bandwidth (overage)
+        sku: eas-update-bandwidth
+        unitCost: 0.10
+        currency: USD
+        unit: per GiB over plan limit
+      - name: Update Storage (overage)
+        sku: eas-update-storage
+        unitCost: 0.05
+        currency: USD
+        unit: per GiB over plan limit
+    includedMAU:
+      - plan: Free
+        value: 1000
+      - plan: Starter
+        value: 3000
+      - plan: Production
+        value: 50000
+      - plan: Enterprise
+        value: 1000000
+    notes: >
+      A Monthly Active User is counted once per billing period. Growth in
+      active user base is the primary driver of EAS Update costs at scale.
+
+  - name: EAS Workflows (CI/CD)
+    description: CI/CD pipeline and automation costs
+    billingModel: Minutes-based + per-test
+    services:
+      - name: CI/CD Minutes (overage)
+        sku: eas-workflows-minutes
+        unitCost: null
+        currency: USD
+        unit: per minute
+        note: Usage-based pricing; exact per-minute rate varies
+      - name: Maestro Testing
+        sku: eas-workflows-maestro
+        unitCost: 0.05
+        currency: USD
+        unit: per job (plus CI/CD minutes)
+    includedMinutes:
+      - plan: Free
+        value: 60
+        unit: minutes/month
+      - plan: Starter
+        value: 0
+        unit: usage-based
+      - plan: Production
+        value: 0
+        unit: usage-based
+
+  - name: EAS Hosting
+    description: Edge hosting for Expo Router and React Native web apps
+    billingModel: Requests + CPU + Storage
+    services:
+      - name: Hosting Requests
+        sku: eas-hosting-requests
+        unitCost: null
+        currency: USD
+        unit: per request (overage)
+      - name: Hosting CPU
+        sku: eas-hosting-cpu
+        unitCost: null
+        currency: USD
+        unit: per CPU-ms (overage)
+      - name: Hosting Storage
+        sku: eas-hosting-storage
+        unitCost: null
+        currency: USD
+        unit: per GB (overage)
+    included:
+      - plan: All
+        requests: 100000
+        cpuMs: 1000000
+        storageGB: 1
+
+  - name: Subscription Base Fees
+    description: Fixed monthly plan fees
+    billingModel: Flat monthly
+    services:
+      - plan: Free
+        monthlyCost: 0
+        currency: USD
+      - plan: Starter
+        monthlyCost: 19
+        currency: USD
+      - plan: Production
+        monthlyCost: 199
+        currency: USD
+      - plan: Enterprise
+        monthlyCost: null
+        currency: USD
+        note: Custom pricing
+
+  - name: Add-ons
+    description: Optional capacity and support add-ons
+    billingModel: Per-unit monthly
+    services:
+      - name: Additional Build Concurrency
+        sku: eas-build-concurrency
+        unitCost: 50
+        currency: USD
+        unit: per concurrent slot/month
+        maxUnits: 5
+
+costOptimization:
+  recommendations:
+    - title: Right-size build resource class
+      description: >
+        Use Android/iOS medium resource classes for most builds. Only escalate
+        to large when build times justify the 2x cost premium.
+      impact: high
+
+    - title: Monitor build credit consumption
+      description: >
+        Enable email alerts at 80% and 100% of monthly build credit usage.
+        Review the account dashboard for real-time usage estimates (delayed
+        up to 24 hours).
+      impact: medium
+
+    - title: Cancel unnecessary builds promptly
+      description: >
+        Builds cancelled before work begins are not charged. Implement branch
+        filters in EAS Workflows to avoid triggering builds on non-essential
+        commits.
+      impact: medium
+
+    - title: Optimize OTA update payload size
+      description: >
+        Smaller JavaScript bundles reduce per-GiB bandwidth charges. Use
+        code splitting, tree shaking, and asset optimization to minimize
+        update payloads delivered to MAUs.
+      impact: high
+
+    - title: Choose plan based on MAU growth trajectory
+      description: >
+        The Production plan's 50,000 MAU limit costs $199/month. At $0.005
+        per additional MAU, overage breakeven vs. Enterprise is at ~200,000
+        additional MAUs. Model expected growth before plan selection.
+      impact: high
+
+    - title: Use Robot Users for CI/CD scope limitation
+      description: >
+        Grant Robot Users only the permissions required for specific CI/CD
+        pipelines to reduce blast radius of token compromise and audit
+        access-cost attribution by workflow.
+      impact: low
+
+governance:
+  budgetAlerts:
+    - threshold: 80
+      unit: percent
+      resource: EAS Build credits
+      channel: Email (automatic)
+    - threshold: 100
+      unit: percent
+      resource: EAS Build credits
+      channel: Email (automatic)
+
+  costAllocation:
+    - dimension: Project
+      description: Costs are attributable per project (25-300 depending on plan)
+    - dimension: Platform
+      description: Android and iOS builds tracked separately by resource class
+    - dimension: Service
+      description: EAS Build, Update, Workflows, and Hosting billed independently
+
+  billingCycle: Monthly
+  annualContractAvailable: true
+  taxHandling: >
+    All prices are pre-tax. Worldwide pricing applies; applicable taxes
+    are added at checkout based on billing jurisdiction.

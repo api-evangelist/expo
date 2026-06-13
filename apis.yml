@@ -1,0 +1,206 @@
+aid: expo
+name: Expo
+description: >
+  Expo is a React Native development platform providing cloud infrastructure for
+  building, submitting, updating, and managing mobile apps. Expo Application
+  Services (EAS) delivers REST and CLI-driven APIs for EAS Build (cloud compilation
+  and code signing for Android and iOS), EAS Submit (automated App Store and Google
+  Play submissions), EAS Update (over-the-air JavaScript bundle delivery), EAS
+  Workflows (CI/CD pipelines with cron and Slack integration), EAS Hosting (edge
+  deployment of Expo Router and React Native web apps), EAS Insights (analytics),
+  EAS Observe (performance monitoring), and a Push Notifications broker. All
+  services are accessible programmatically via the eas-cli, Personal Access Tokens,
+  or Robot User tokens, and support webhooks for build and submission events.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/expo/refs/heads/main/apis.yml
+created: 2026-06-13
+modified: 2026-06-13
+specificationVersion: "0.19"
+tags:
+  - React Native
+  - Mobile Development
+  - Build Automation
+  - Over-the-Air Updates
+  - CI/CD
+  - App Store Submission
+  - Push Notifications
+  - Cloud Build
+  - Developer Tools
+apis:
+  - name: EAS Build API
+    description: >
+      Cloud compilation and code-signing service for Android and iOS React Native
+      apps. Submits build jobs via eas-cli or programmatic token access, returns
+      build artifacts, and fires BUILD webhooks on completion. Supports Android
+      (medium/large) and iOS (medium/large) resource classes with priority queues.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/build/introduction/
+    baseURL: https://api.expo.dev
+    tags:
+      - Build
+      - Android
+      - iOS
+      - Code Signing
+      - Cloud
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/build/introduction/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+      - type: Webhooks
+        url: https://docs.expo.dev/eas/webhooks/
+      - type: CLI
+        url: https://docs.expo.dev/eas/cli/
+
+  - name: EAS Submit API
+    description: >
+      Automated upload service that publishes compiled app binaries to the Apple
+      App Store and Google Play Store directly from the cloud. Fires SUBMIT
+      webhooks on completion. Removes manual upload steps and reduces submission
+      errors.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/submit/introduction/
+    baseURL: https://api.expo.dev
+    tags:
+      - Submission
+      - App Store
+      - Google Play
+      - Distribution
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/submit/introduction/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+      - type: Webhooks
+        url: https://docs.expo.dev/eas/webhooks/
+
+  - name: EAS Update API
+    description: >
+      Over-the-air update delivery service that pushes JavaScript bundle fixes
+      directly to end users without requiring a full app store submission. Tracks
+      Monthly Active Users (MAU) and delivers updates via global edge bandwidth.
+      Supports branching and rollout controls.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/eas-update/introduction/
+    baseURL: https://api.expo.dev
+    tags:
+      - Over-the-Air Updates
+      - OTA
+      - JavaScript
+      - Deployment
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/eas-update/introduction/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+
+  - name: EAS Workflows API
+    description: >
+      CI/CD automation service for React Native apps supporting scheduled cron
+      jobs, Slack integration, and automated build and release pipelines. Extends
+      EAS Build and Submit with workflow orchestration. Includes 60 minutes free
+      on the Free plan with usage-based pricing on paid tiers.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/eas/workflows/
+    baseURL: https://api.expo.dev
+    tags:
+      - CI/CD
+      - Automation
+      - Workflows
+      - Cron
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/eas/workflows/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+
+  - name: EAS Hosting API
+    description: >
+      Edge deployment service for Expo Router and React Native web applications,
+      including API routes. Provides 100,000 monthly requests, 1 million CPU-ms,
+      and 1 GB storage on all plans, with global CDN delivery.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/eas/hosting/introduction/
+    baseURL: https://api.expo.dev
+    tags:
+      - Hosting
+      - Edge
+      - Web
+      - API Routes
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/eas/hosting/introduction/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+
+  - name: Push Notifications API
+    description: >
+      Expo's hosted push notification broker that abstracts Apple APNs and Google
+      FCM into a single REST endpoint. Delivers push messages to iOS and Android
+      devices registered with the Expo Push Token system.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/push-notifications/overview/
+    baseURL: https://exp.host
+    tags:
+      - Push Notifications
+      - APNs
+      - FCM
+      - Mobile
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/push-notifications/overview/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+
+  - name: EAS Webhooks API
+    description: >
+      Event notification system that delivers HTTP POST payloads to configured
+      endpoints when EAS Build or EAS Submit jobs complete. Payloads are signed
+      with HMAC-SHA1 using a shared secret. Supports exponential back-off retry
+      for failed deliveries.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.expo.dev/eas/webhooks/
+    baseURL: https://api.expo.dev
+    tags:
+      - Webhooks
+      - Events
+      - HMAC
+      - Notifications
+    properties:
+      - type: Documentation
+        url: https://docs.expo.dev/eas/webhooks/
+      - type: Authentication
+        url: https://docs.expo.dev/accounts/programmatic-access/
+
+common:
+  - type: Website
+    url: https://expo.dev
+  - type: Documentation
+    url: https://docs.expo.dev
+  - type: GitHubOrg
+    url: https://github.com/expo
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/expo-dev
+  - type: Blog
+    url: https://expo.dev/blog
+  - type: Pricing
+    url: https://expo.dev/pricing
+  - type: StatusPage
+    url: https://status.expo.dev
+  - type: X
+    url: https://x.com/expo
+  - type: Changelog
+    url: https://expo.dev/changelog
+  - type: CLI
+    url: https://github.com/expo/eas-cli
+  - type: Plans
+    url: plans/expo-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/expo-rate-limits.yml
+  - type: FinOps
+    url: finops/expo-finops.yml
+
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
