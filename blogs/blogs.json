@@ -1,7 +1,7 @@
 {
   "blog": "https://expo.dev/blog",
   "feed": "https://expo.dev/blog/rss.xml",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Best CI/CD for mobile apps in 2026: a practical comparison",
@@ -403,5 +403,13 @@
       "author": "Daehyeon Mun",
       "thumbnail": "https://cdn.sanity.io/images/9r24npb8/production/2db61c3215c809002bdbe3d7aa145675477ad9f1-2400x1350.png?w=1200&h=675&q=80&auto=format"
     }
-  ]
+  ],
+  "repo": "expo",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/expo-dev",
+      "error": "HTTPError"
+    }
+  ],
+  "post_count": 0
 }
