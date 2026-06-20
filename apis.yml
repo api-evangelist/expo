@@ -12,7 +12,7 @@ description: >
   services are accessible programmatically via the eas-cli, Personal Access Tokens,
   or Robot User tokens, and support webhooks for build and submission events.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/expo/refs/heads/main/apis.yml
 created: 2026-06-13
 modified: 2026-06-13
@@ -34,7 +34,7 @@ apis:
       apps. Submits build jobs via eas-cli or programmatic token access, returns
       build artifacts, and fires BUILD webhooks on completion. Supports Android
       (medium/large) and iOS (medium/large) resource classes with priority queues.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/build/introduction/
     baseURL: https://api.expo.dev
     tags:
@@ -59,7 +59,7 @@ apis:
       App Store and Google Play Store directly from the cloud. Fires SUBMIT
       webhooks on completion. Removes manual upload steps and reduces submission
       errors.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/submit/introduction/
     baseURL: https://api.expo.dev
     tags:
@@ -81,7 +81,7 @@ apis:
       directly to end users without requiring a full app store submission. Tracks
       Monthly Active Users (MAU) and delivers updates via global edge bandwidth.
       Supports branching and rollout controls.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/eas-update/introduction/
     baseURL: https://api.expo.dev
     tags:
@@ -101,7 +101,7 @@ apis:
       jobs, Slack integration, and automated build and release pipelines. Extends
       EAS Build and Submit with workflow orchestration. Includes 60 minutes free
       on the Free plan with usage-based pricing on paid tiers.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/eas/workflows/
     baseURL: https://api.expo.dev
     tags:
@@ -120,7 +120,7 @@ apis:
       Edge deployment service for Expo Router and React Native web applications,
       including API routes. Provides 100,000 monthly requests, 1 million CPU-ms,
       and 1 GB storage on all plans, with global CDN delivery.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/eas/hosting/introduction/
     baseURL: https://api.expo.dev
     tags:
@@ -139,7 +139,7 @@ apis:
       Expo's hosted push notification broker that abstracts Apple APNs and Google
       FCM into a single REST endpoint. Delivers push messages to iOS and Android
       devices registered with the Expo Push Token system.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/push-notifications/overview/
     baseURL: https://exp.host
     tags:
@@ -159,7 +159,7 @@ apis:
       endpoints when EAS Build or EAS Submit jobs complete. Payloads are signed
       with HMAC-SHA1 using a shared secret. Supports exponential back-off retry
       for failed deliveries.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.expo.dev/eas/webhooks/
     baseURL: https://api.expo.dev
     tags:
