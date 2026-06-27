@@ -190,7 +190,7 @@ common:
     url: https://status.expo.dev
   - type: X
     url: https://x.com/expo
-  - type: Changelog
+  - type: ChangeLog
     url: https://expo.dev/changelog
   - type: CLI
     url: https://github.com/expo/eas-cli
