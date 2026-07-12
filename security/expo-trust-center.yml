@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://expo.dev/trust
+url: https://expo.dev/trust
+certifications:
+- SOC 2
+- GDPR
+evidence:
+- source: https://expo.dev/trust
+  keywords:
+  - soc 2
+  - trust center
+  - compliance certification
+  - gdpr

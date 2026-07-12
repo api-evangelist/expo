@@ -174,6 +174,12 @@ apis:
         url: https://docs.expo.dev/accounts/programmatic-access/
 
 common:
+  - type: TrustCenter
+    url: security/expo-trust-center.yml
+  - type: VulnerabilityDisclosure
+    url: security/expo-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/expo-domain-security.yml
   - type: Website
     url: https://expo.dev
   - type: Documentation
