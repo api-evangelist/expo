@@ -2,13 +2,11 @@
   "repo": "expo",
   "feeds": [
     {
-      "source": "https://expo.dev/blog",
-      "feed_url": "",
-      "saved": 2,
-      "method": "agent-scrape"
+      "source": "https://www.linkedin.com/company/expo-dev",
+      "error": "HTTPError"
     }
   ],
-  "fetched": "2026-06-27T12:40:36Z",
-  "post_count": 4,
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 6,
   "agent_pulled": "2026-06-27"
 }
