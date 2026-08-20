@@ -50,6 +50,12 @@ apis:
     humanURL: https://docs.expo.dev/build/introduction/
     baseURL: https://api.expo.dev
     tags:
+      - Builds
+      - Android
+      - iOS
+      - Code Signing
+      - Cloud
+    tags_raw:
       - Build
       - Android
       - iOS
@@ -157,6 +163,11 @@ apis:
     tags:
       - Push Notifications
       - APNs
+      - fcm
+      - Mobile
+    tags_raw:
+      - Push Notifications
+      - APNs
       - FCM
       - Mobile
     properties:
@@ -175,6 +186,11 @@ apis:
     humanURL: https://docs.expo.dev/eas/webhooks/
     baseURL: https://api.expo.dev
     tags:
+      - Webhook
+      - Event
+      - HMAC
+      - Notification
+    tags_raw:
       - Webhooks
       - Events
       - HMAC
