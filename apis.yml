@@ -174,7 +174,7 @@ apis:
     tags:
       - Push Notifications
       - APNs
-      - fcm
+      - FCM
       - Mobile
     tags_raw:
       - Push Notifications
